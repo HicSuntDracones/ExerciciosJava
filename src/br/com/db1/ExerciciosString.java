@@ -1,9 +1,6 @@
 package br.com.db1;
 
 public class ExerciciosString {
-	String aluno = null;
-	Integer contadorPosicoes = 0;
-	Integer contadorVogais = 0;
 
 	public String paraCaixaAlta(String string) {
 		return string.toUpperCase();
@@ -37,6 +34,7 @@ public class ExerciciosString {
 	}
 
 	public String primeiroNomeAluno(String string) {
+		String aluno = null;
 		if (string.contains(" ")) {
 			aluno = string.substring(0, string.indexOf(" "));
 		} else {
@@ -50,6 +48,8 @@ public class ExerciciosString {
 	}
 
 	public Integer contarVogais(String string) {
+		Integer contadorPosicoes = 0;
+		Integer contadorVogais = 0;
 		while (contadorPosicoes < string.length()) {
 
 			if ("a".equals(string.substring(contadorPosicoes, contadorPosicoes + 1))
